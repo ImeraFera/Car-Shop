@@ -1,6 +1,6 @@
 package com.car_shop.models;
 
-import java.sql.Date;
+import java.util.Date;
 import java.util.UUID;
 
 import org.springframework.format.annotation.DateTimeFormat;
@@ -11,8 +11,12 @@ import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.persistence.MappedSuperclass;
+import lombok.Getter;
+import lombok.Setter;
 
 @MappedSuperclass
+@Getter
+@Setter
 public class BaseEntity {
 
     // Bu class diğer tüm modellerdeki ortak(hepsinde olan fieldlar) olan fieldları
